@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bx2bc4s6kb7sk"]
+
+[ext_resource type="Script" path="res://scripts/Mario.cs" id="1_etd14"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_hnire"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_dxi6h"]
+
+[node name="Player" type="CharacterBody3D"]
+transform = Transform3D(0.335, 0, 0, 0, 0.335, 0, 0, 0, 0.335, 0, 0, 0)
+collision_layer = 2
+script = ExtResource("1_etd14")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_hnire")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_dxi6h")

@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dmqscecn2qf36"]
+
+[ext_resource type="Script" path="res://scripts/Coin.cs" id="1_2evfg"]
+[ext_resource type="ArrayMesh" uid="uid://cwwbq3ibsw2d3" path="res://models/coinGold.obj" id="1_bt5bh"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ecp23"]
+points = PackedVector3Array(0.163528, 0.292606, 0.05, -0.165925, 0.0984162, -0.05, -0.0523442, 0.0326657, -0.05, 0.073096, 0.35539, -0.05, -0.160696, 0.298409, 0.05, -0.010168, 0.0147163, 0.05, 0.168757, 0.104407, -0.05, -0.165925, 0.301584, -0.05, -0.010168, 0.385284, 0.05, 0.163528, 0.107394, 0.05, -0.160696, 0.101591, 0.05, 0.168757, 0.295593, -0.05, -0.0105417, 0.391261, -0.05, 0.00734557, 0.0087394, -0.05, 0.00716027, 0.385284, 0.05, 0.0303281, 0.0263237, 0.05, 0.144842, 0.0864718, -0.05, 0.14036, 0.30998, 0.05, 0.00734557, 0.391261, -0.05, 0.14036, 0.0900195, 0.05, -0.0105417, 0.0087394, -0.05, 0.144842, 0.313528, -0.05, 0.0303281, 0.373676, 0.05, 0.073096, 0.0446101, -0.05, 0.00716027, 0.0147163, 0.05, 0.162762, 0.301584, -0.05, 0.162762, 0.0984162, -0.05, 0.0312608, 0.379279, -0.05, 0.0312608, 0.0207213, -0.05, -0.0523442, 0.367297, -0.05, 0.070856, 0.0494661, 0.05, 0.070856, 0.350534, 0.05)
+
+[node name="Coin" type="Area3D"]
+collision_mask = 2
+script = ExtResource("1_2evfg")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_bt5bh")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_ecp23")
+
+[connection signal="body_entered" from="." to="." method="OnBodyEntered"]

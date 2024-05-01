@@ -6,8 +6,8 @@ public partial class Mario : CharacterBody3D
 	[Export]
 	Label3D Label { get; set; }
 	int Score { get; set; } = 0;
-	public const float Speed = 5.0f;
-	public const float JumpVelocity = 4.5f;
+	public const float Speed = 2.0f;
+	public const float JumpVelocity = 3.5f;
 
 	public override void _PhysicsProcess(double delta)
 	{
@@ -43,20 +43,18 @@ public partial class Mario : CharacterBody3D
 		Velocity = velocity;
 
 		var collision = MoveAndCollide(velocity * (float)delta);
-		if (collision != null)
-		{
-			Velocity = Velocity.Slide(collision.GetNormal());
-			var name = ((Node3D)collision.GetCollider()).Name;
-            GD.Print("I collided with ", name);
+		//if (collision != null)
+		//{
+		//	Velocity = Velocity.Slide(collision.GetNormal());
+		//	var name = ((Node3D)collision.GetCollider()).Name;
+		//	GD.Print("I collided with ", name);
 
-			if (name.ToString().StartsWith("CoinBlock"))
-			{
-				Score += 1;
-				Label.Text = Score.ToString();
-			}
-
-
-		}
+		//	if (name.ToString().StartsWith("CoinBlock"))
+		//	{
+		//		Score += 1;
+		//		Label.Text = Score.ToString();
+		//	}
+		//}
 
 		MoveAndSlide();
 	}
