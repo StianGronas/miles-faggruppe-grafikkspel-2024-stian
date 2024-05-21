@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dvni8i6wmyofb"]
+
+[ext_resource type="ArrayMesh" uid="uid://covlmtuwvlwk2" path="res://models/doorLargeOpen.obj" id="1_ciauv"]
+[ext_resource type="Script" path="res://scripts/Gate.cs" id="1_wv5w0"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xbac7"]
+size = Vector3(0.613159, 0.800564, 0.359863)
+
+[node name="Gate" type="Area3D"]
+collision_mask = 2
+script = ExtResource("1_wv5w0")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_ciauv")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.10352e-05, 0.409689, -0.000732422)
+shape = SubResource("BoxShape3D_xbac7")
+
+[connection signal="body_entered" from="." to="." method="OnBodyEntered"]

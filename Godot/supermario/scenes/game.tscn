@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://ddpksu0453idh"]
+[gd_scene load_steps=12 format=3 uid="uid://ddpksu0453idh"]
 
 [ext_resource type="PackedScene" uid="uid://b55ncj21juaxr" path="res://scenes/map.tscn" id="1_ty26n"]
 [ext_resource type="PackedScene" uid="uid://bx2bc4s6kb7sk" path="res://scenes/player.tscn" id="2_1unxv"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://c5y5orhvkuf8e" path="res://scenes/platform.tscn" id="4_qrdg4"]
 [ext_resource type="PackedScene" uid="uid://dmqscecn2qf36" path="res://scenes/coin.tscn" id="5_ie87r"]
 [ext_resource type="PackedScene" uid="uid://dfy4tm7gu7p8f" path="res://scenes/killzone.tscn" id="6_uksuo"]
+[ext_resource type="PackedScene" uid="uid://dvni8i6wmyofb" path="res://scenes/gate.tscn" id="7_kqhhd"]
 
 [sub_resource type="Animation" id="Animation_t3ym1"]
 length = 0.001
@@ -51,9 +52,9 @@ _data = {
 
 [node name="GridMap" parent="." instance=ExtResource("1_ty26n")]
 data = {
-"cells": PackedInt32Array(0, 0, 0, 0, 1, 0, 0, 65535, 0, 0, 65534, 0, 0, 65533, 0, 0, 65532, 655360, 0, 65531, 0, 1, 65531, 655360, 2, 65531, 655360, 3, 65531, 655360, 0, 65524, 0, 0, 65522, 0, 0, 65523, 0)
+"cells": PackedInt32Array(0, 0, 0, 0, 1, 0, 0, 65535, 0, 0, 65534, 0, 0, 65533, 0, 0, 65532, 655360, 0, 65531, 0, 1, 65531, 655360, 2, 65531, 655360, 3, 65531, 655360, 0, 65524, 0, 0, 65522, 0, 0, 65523, 0, 65533, 5, 6, 65532, 5, 6, 65531, 5, 6, 13, 65533, 1441796, 13, 65534, 1441796, 13, 0, 1441796, 12, 0, 1441796, 12, 65535, 1441796, 12, 65533, 1441796, 11, 65535, 1441796, 11, 65534, 1441796, 11, 1, 1441795, 12, 1, 655363, 13, 1, 1441795, 11, 2, 1441792, 13, 2, 1441792, 12, 2, 1441792, 13, 3, 1441792, 12, 3, 1441792, 11, 3, 1441792, 10, 2, 1441802, 10, 3, 10, 11, 65531, 0, 12, 65531, 0, 13, 65531, 0, 12, 65530, 0)
 }
-metadata/_editor_floor_ = Vector3(0, 0, 0)
+metadata/_editor_floor_ = Vector3(0, 1, 0)
 
 [node name="Player" parent="." instance=ExtResource("2_1unxv")]
 transform = Transform3D(0.335, 0, 0, 0, 0.335, 0, 0, 0, 0.335, 0.551583, 2, 1.38751)
@@ -68,14 +69,14 @@ pixel_size = 0.01
 text = "0"
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, -0.107999, 0.994151, 0, -0.994151, -0.107999, 0, 0, 0)
 shadow_enabled = true
 
 [node name="CoinBlock" parent="." instance=ExtResource("2_xnev1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.517193, 2.26128, -1)
 
 [node name="Platform" parent="." instance=ExtResource("4_qrdg4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, -10.3)
+transform = Transform3D(0.0637624, 0, 0.997965, 0, 1, 0, -0.997965, 0, 0.0637624, 0.5, 0, -10.3)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Platform"]
 libraries = {
@@ -92,3 +93,27 @@ Timer = NodePath("Timer")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Killzone"]
 shape = SubResource("WorldBoundaryShape3D_armnl")
+
+[node name="Coin2" parent="." instance=ExtResource("5_ie87r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.701708, 1.9218, -2.86669)
+
+[node name="SecretGateIn" parent="." node_paths=PackedStringArray("MoveToPosition") instance=ExtResource("7_kqhhd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.4759, 1, -5.53522)
+MoveToPosition = NodePath("../InPos")
+
+[node name="SecretGateOut" parent="." node_paths=PackedStringArray("MoveToPosition") instance=ExtResource("7_kqhhd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.5041, 1, 3.41064)
+MoveToPosition = NodePath("../OutPos")
+
+[node name="Gate" parent="." node_paths=PackedStringArray("MoveToPosition") instance=ExtResource("7_kqhhd")]
+transform = Transform3D(-0.0168765, 0, 0.999858, 0, 1, 0, -0.999858, 0, -0.0168765, 3.72656, 1, -4.5342)
+MoveToPosition = NodePath("../GatePos")
+
+[node name="GatePos" type="Node3D" parent="."]
+transform = Transform3D(-0.0168765, 0, 0.999858, 0, 1, 0, -0.999858, 0, -0.0168765, 12.5607, 2, -4.5342)
+
+[node name="OutPos" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.480675, 2.52028, -13.1937)
+
+[node name="InPos" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.15224, 2.66643, -4.55451)
