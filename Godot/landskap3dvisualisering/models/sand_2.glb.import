@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://c6tw8exad7msw"
-path="res://.godot/imported/sand.glb-afd1a0273ab184e6ab1267858d45089e.scn"
+uid="uid://bsl5xtkxoe7tl"
+path="res://.godot/imported/sand_2.glb-d1ed5eda66be8d6edb280f00108b7a0a.scn"
 
 [deps]
 
-source_file="res://models/sand.glb"
-dest_files=["res://.godot/imported/sand.glb-afd1a0273ab184e6ab1267858d45089e.scn"]
+source_file="res://models/sand_2.glb"
+dest_files=["res://.godot/imported/sand_2.glb-d1ed5eda66be8d6edb280f00108b7a0a.scn"]
 
 [params]
 
