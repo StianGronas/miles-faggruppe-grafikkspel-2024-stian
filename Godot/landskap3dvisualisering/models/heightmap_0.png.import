@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cd8s2sf41i78l"
-path.s3tc="res://.godot/imported/sand_0.png-e73ab14e381da3865f0bf074c98a9a21.s3tc.ctex"
+uid="uid://rvub2fsw6y4t"
+path.s3tc="res://.godot/imported/heightmap_0.png-30e811d417b687b68d50090bcb7633cb.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://models/sand_0.png"
-dest_files=["res://.godot/imported/sand_0.png-e73ab14e381da3865f0bf074c98a9a21.s3tc.ctex"]
+source_file="res://models/heightmap_0.png"
+dest_files=["res://.godot/imported/heightmap_0.png-30e811d417b687b68d50090bcb7633cb.s3tc.ctex"]
 
 [params]
 
