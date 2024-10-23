@@ -17,6 +17,12 @@ public partial class Sand : Node3D
 		var path3d = GetNode<Path3D>("Path3D");
 		var pathFollow3d = path3d.GetNode<PathFollow3D>("PathFollow3D");
 
-		pathFollow3d.Progress += (float)(delta * speed);
+		float actualSpeed = speed;
+
+		if (pathFollow3d.ProgressRatio > 0.45f) {
+			actualSpeed *= 0.4f;
+		}
+
+		pathFollow3d.Progress += (float)(delta * actualSpeed);
 	}
 }

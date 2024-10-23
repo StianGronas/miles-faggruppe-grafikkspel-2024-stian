@@ -51,7 +51,8 @@ transform = Transform3D(0.812216, 0, -0.583357, 0, 1, 0, 0.583357, 0, 0.812216, 
 curve = SubResource("Curve3D_erdy1")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="Path3D"]
-transform = Transform3D(-0.517459, 0, 0.855685, 0, 0.999945, 0, -0.855683, 0, -0.51746, -4.46982, 4.11498, -22.9128)
+transform = Transform3D(0.913456, 0, 0.406882, 0, 0.999944, 0, -0.406882, 0, 0.913458, -81.8687, 7.11273, -101.448)
+progress = 110.883
 rotation_mode = 1
 
 [node name="Camera3D" type="Camera3D" parent="Path3D/PathFollow3D"]
