@@ -1,0 +1,157 @@
+[gd_scene load_steps=6 format=3 uid="uid://ilcx5vwvvyps"]
+
+[ext_resource type="PackedScene" uid="uid://wc8wjde4ctd5" path="res://Scenes/Space.tscn" id="1_qsoe1"]
+[ext_resource type="Script" path="res://Scenes/Monopol.cs" id="1_sroh5"]
+[ext_resource type="PackedScene" uid="uid://cp5ogo80q3elr" path="res://Scenes/Player.tscn" id="3_8frko"]
+
+[sub_resource type="Environment" id="Environment_50s1e"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_tv86b"]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_sroh5")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 5.72436, 0)
+environment = SubResource("Environment_50s1e")
+
+[node name="Board" type="MeshInstance3D" parent="."]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 0)
+mesh = SubResource("PlaneMesh_tv86b")
+
+[node name="Space" parent="Board" instance=ExtResource("1_qsoe1")]
+transform = Transform3D(0.166667, 0, 0, 0, 0.166667, 0, 0, 0, 0.166667, -0.482433, 0, 0.557316)
+Id = 1
+Header = "Start"
+SpaceColor = Color(0.513222, 0.799081, 0.876034, 1)
+
+[node name="Space2" parent="Board" instance=ExtResource("1_qsoe1")]
+transform = Transform3D(0.166667, 0, 0, 0, 0.166667, 0, 0, 0, 0.166667, -0.482433, 0, 0.447316)
+Id = 2
+SpaceType = 1
+Header = "2"
+SpaceColor = Color(0.796078, 0.709804, 0.854902, 1)
+
+[node name="Space3" parent="Board" instance=ExtResource("1_qsoe1")]
+transform = Transform3D(0.166667, 0, 0, 0, 0.166667, 0, 0, 0, 0.166667, -0.482433, 0, 0.337316)
+Id = 3
+SpaceType = 1
+Header = "3"
+SpaceColor = Color(0.796078, 0.709804, 0.854902, 1)
+
+[node name="Space4" parent="Board" instance=ExtResource("1_qsoe1")]
+transform = Transform3D(0.166667, 0, 0, 0, 0.166667, 0, 0, 0, 0.166667, -0.482433, 0, 0.227316)
+Id = 4
+Header = "4"
+SpaceColor = Color(0.796078, 0.709804, 0.854902, 1)
+
+[node name="Space5" parent="Board" instance=ExtResource("1_qsoe1")]
+transform = Transform3D(0.166667, 0, 0, 0, 0.166667, 0, 0, 0, 0.166667, -0.482433, 0, 0.117316)
+Id = 5
+Header = "5"
+SpaceColor = Color(0.796078, 0.709804, 0.854902, 1)
+
+[node name="Space6" parent="Board" instance=ExtResource("1_qsoe1")]
+transform = Transform3D(0.166667, 0, 0, 0, 0.166667, 0, 0, 0, 0.166667, -0.482433, 0, 0.00731607)
+Id = 6
+Header = "6"
+SpaceColor = Color(0.796078, 0.709804, 0.854902, 1)
+
+[node name="Space7" parent="Board" instance=ExtResource("1_qsoe1")]
+transform = Transform3D(0.166667, 0, 0, 0, 0.166667, 0, 0, 0, 0.166667, -0.482433, 0, -0.102684)
+Id = 7
+Header = "7"
+SpaceColor = Color(0.796078, 0.709804, 0.854902, 1)
+
+[node name="Space8" parent="Board" instance=ExtResource("1_qsoe1")]
+transform = Transform3D(0.166667, 0, 0, 0, 0.166667, 0, 0, 0, 0.166667, -0.482433, 0, -0.212684)
+Id = 8
+Header = "8"
+SpaceColor = Color(0.796078, 0.709804, 0.854902, 1)
+
+[node name="Space9" parent="Board" instance=ExtResource("1_qsoe1")]
+transform = Transform3D(0.166667, 0, 0, 0, 0.166667, 0, 0, 0, 0.166667, -0.482433, 0, -0.322684)
+Id = 9
+Header = "9"
+SpaceColor = Color(0.796078, 0.709804, 0.854902, 1)
+
+[node name="Space10" parent="Board" instance=ExtResource("1_qsoe1")]
+transform = Transform3D(0.166667, 0, 0, 0, 0.166667, 0, 0, 0, 0.166667, -0.482433, 0, -0.432684)
+Id = 10
+Header = "10"
+SpaceColor = Color(0.796078, 0.709804, 0.854902, 1)
+
+[node name="Space11" parent="Board" instance=ExtResource("1_qsoe1")]
+transform = Transform3D(0.166667, 0, 0, 0, 0.166667, 0, 0, 0, 0.166667, -0.482433, 0, -0.542684)
+Id = 11
+Header = "11"
+SpaceColor = Color(0.873738, 0.733808, 0.306998, 1)
+
+[node name="Space12" parent="Board" instance=ExtResource("1_qsoe1")]
+transform = Transform3D(-7.28523e-09, 0, -0.166667, 0, 0.166667, 0, 0.166667, 0, -7.28523e-09, -0.336357, 0, -0.577052)
+Id = 1
+Header = "Start"
+SpaceColor = Color(0.513222, 0.799081, 0.876034, 1)
+
+[node name="Space13" parent="Board" instance=ExtResource("1_qsoe1")]
+transform = Transform3D(-7.28523e-09, 0, -0.166667, 0, 0.166667, 0, 0.166667, 0, -7.28523e-09, -0.226376, 0, -0.575011)
+Id = 2
+SpaceType = 1
+Header = "2"
+SpaceColor = Color(0.796078, 0.709804, 0.854902, 1)
+
+[node name="Text" parent="Board/Space13" index="1"]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 0.331004, 0, 0)
+
+[node name="Space14" parent="Board" instance=ExtResource("1_qsoe1")]
+transform = Transform3D(-7.28523e-09, 0, -0.166667, 0, 0.166667, 0, 0.166667, 0, -7.28523e-09, -0.116395, 0, -0.57297)
+Id = 3
+SpaceType = 1
+Header = "3"
+SpaceColor = Color(0.796078, 0.709804, 0.854902, 1)
+
+[node name="Space15" parent="Board" instance=ExtResource("1_qsoe1")]
+transform = Transform3D(-7.28523e-09, 0, -0.166667, 0, 0.166667, 0, 0.166667, 0, -7.28523e-09, -0.00641406, 0, -0.570929)
+Id = 4
+Header = "4"
+SpaceColor = Color(0.796078, 0.709804, 0.854902, 1)
+
+[node name="Space16" parent="Board" instance=ExtResource("1_qsoe1")]
+transform = Transform3D(-7.28523e-09, 0, -0.166667, 0, 0.166667, 0, 0.166667, 0, -7.28523e-09, 0.103567, 0, -0.568889)
+Id = 5
+Header = "5"
+SpaceColor = Color(0.796078, 0.709804, 0.854902, 1)
+
+[node name="Space17" parent="Board" instance=ExtResource("1_qsoe1")]
+transform = Transform3D(-7.28523e-09, 0, -0.166667, 0, 0.166667, 0, 0.166667, 0, -7.28523e-09, 0.213548, 0, -0.566848)
+Id = 6
+Header = "6"
+SpaceColor = Color(0.796078, 0.709804, 0.854902, 1)
+
+[node name="Space18" parent="Board" instance=ExtResource("1_qsoe1")]
+transform = Transform3D(-7.28523e-09, 0, -0.166667, 0, 0.166667, 0, 0.166667, 0, -7.28523e-09, 0.323529, 0, -0.564807)
+Id = 7
+Header = "7"
+SpaceColor = Color(0.796078, 0.709804, 0.854902, 1)
+
+[node name="Space19" parent="Board" instance=ExtResource("1_qsoe1")]
+transform = Transform3D(-7.28523e-09, 0, -0.166667, 0, 0.166667, 0, 0.166667, 0, -7.28523e-09, 0.43351, 0, -0.562767)
+Id = 8
+Header = "8"
+SpaceColor = Color(0.796078, 0.709804, 0.854902, 1)
+
+[node name="Space20" parent="Board" instance=ExtResource("1_qsoe1")]
+transform = Transform3D(-7.28523e-09, 0, -0.166667, 0, 0.166667, 0, 0.166667, 0, -7.28523e-09, 0.543491, 0, -0.560726)
+Id = 9
+Header = "9"
+SpaceColor = Color(0.796078, 0.709804, 0.854902, 1)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+light_indirect_energy = 10.0
+
+[node name="Player" parent="." instance=ExtResource("3_8frko")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -2.91928, 0.718161, 3.38387)
+
+[editable path="Board/Space11"]
+[editable path="Board/Space13"]
