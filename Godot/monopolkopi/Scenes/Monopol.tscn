@@ -1,12 +1,374 @@
-[gd_scene load_steps=6 format=3 uid="uid://ilcx5vwvvyps"]
+[gd_scene load_steps=102 format=3 uid="uid://ilcx5vwvvyps"]
 
 [ext_resource type="PackedScene" uid="uid://wc8wjde4ctd5" path="res://Scenes/Space.tscn" id="1_qsoe1"]
-[ext_resource type="Script" path="res://Scenes/Monopol.cs" id="1_sroh5"]
+[ext_resource type="Script" uid="uid://bn873dht5qmuw" path="res://Scripts/Monopol.cs" id="1_sroh5"]
 [ext_resource type="PackedScene" uid="uid://cp5ogo80q3elr" path="res://Scenes/Player.tscn" id="3_8frko"]
+[ext_resource type="PackedScene" uid="uid://3pskjjttxjhs" path="res://Scenes/Dice.tscn" id="3_ummhm"]
 
 [sub_resource type="Environment" id="Environment_50s1e"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_tv86b"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h825x"]
+albedo_color = Color(0.796078, 0.709804, 0.854902, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ummhm"]
+material = SubResource("StandardMaterial3D_h825x")
+size = Vector3(1, 0.03, 0.6)
+
+[sub_resource type="SystemFont" id="SystemFont_33mp0"]
+subpixel_positioning = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u0gif"]
+shading_mode = 0
+albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
+
+[sub_resource type="TextMesh" id="TextMesh_vc1s5"]
+material = SubResource("StandardMaterial3D_u0gif")
+text = "2"
+font = SubResource("SystemFont_33mp0")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_40s22"]
+albedo_color = Color(0.796078, 0.709804, 0.854902, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_15umx"]
+material = SubResource("StandardMaterial3D_40s22")
+size = Vector3(1, 0.03, 0.6)
+
+[sub_resource type="SystemFont" id="SystemFont_oxlx2"]
+subpixel_positioning = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8c4qu"]
+shading_mode = 0
+albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
+
+[sub_resource type="TextMesh" id="TextMesh_kisdq"]
+material = SubResource("StandardMaterial3D_8c4qu")
+text = "3"
+font = SubResource("SystemFont_oxlx2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jge1y"]
+albedo_color = Color(0.796078, 0.709804, 0.854902, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4fd7k"]
+material = SubResource("StandardMaterial3D_jge1y")
+size = Vector3(1, 0.03, 0.6)
+
+[sub_resource type="SystemFont" id="SystemFont_tb7ru"]
+subpixel_positioning = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_88v6f"]
+shading_mode = 0
+albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
+
+[sub_resource type="TextMesh" id="TextMesh_ixrie"]
+material = SubResource("StandardMaterial3D_88v6f")
+text = "4"
+font = SubResource("SystemFont_tb7ru")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4wpwo"]
+albedo_color = Color(0.796078, 0.709804, 0.854902, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4it23"]
+material = SubResource("StandardMaterial3D_4wpwo")
+size = Vector3(1, 0.03, 0.6)
+
+[sub_resource type="SystemFont" id="SystemFont_or18s"]
+subpixel_positioning = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a740h"]
+shading_mode = 0
+albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
+
+[sub_resource type="TextMesh" id="TextMesh_bovun"]
+material = SubResource("StandardMaterial3D_a740h")
+text = "5"
+font = SubResource("SystemFont_or18s")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ummhm"]
+albedo_color = Color(0.796078, 0.709804, 0.854902, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_33mp0"]
+material = SubResource("StandardMaterial3D_ummhm")
+size = Vector3(1, 0.03, 0.6)
+
+[sub_resource type="SystemFont" id="SystemFont_u0gif"]
+subpixel_positioning = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vc1s5"]
+shading_mode = 0
+albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
+
+[sub_resource type="TextMesh" id="TextMesh_40s22"]
+material = SubResource("StandardMaterial3D_vc1s5")
+text = "6"
+font = SubResource("SystemFont_u0gif")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_15umx"]
+albedo_color = Color(0.796078, 0.709804, 0.854902, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_oxlx2"]
+material = SubResource("StandardMaterial3D_15umx")
+size = Vector3(1, 0.03, 0.6)
+
+[sub_resource type="SystemFont" id="SystemFont_8c4qu"]
+subpixel_positioning = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kisdq"]
+shading_mode = 0
+albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
+
+[sub_resource type="TextMesh" id="TextMesh_jge1y"]
+material = SubResource("StandardMaterial3D_kisdq")
+text = "7"
+font = SubResource("SystemFont_8c4qu")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4fd7k"]
+albedo_color = Color(0.796078, 0.709804, 0.854902, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_tb7ru"]
+material = SubResource("StandardMaterial3D_4fd7k")
+size = Vector3(1, 0.03, 0.6)
+
+[sub_resource type="SystemFont" id="SystemFont_88v6f"]
+subpixel_positioning = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ixrie"]
+shading_mode = 0
+albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
+
+[sub_resource type="TextMesh" id="TextMesh_4wpwo"]
+material = SubResource("StandardMaterial3D_ixrie")
+text = "8"
+font = SubResource("SystemFont_88v6f")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4it23"]
+albedo_color = Color(0.796078, 0.709804, 0.854902, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_or18s"]
+material = SubResource("StandardMaterial3D_4it23")
+size = Vector3(1, 0.03, 0.6)
+
+[sub_resource type="SystemFont" id="SystemFont_a740h"]
+subpixel_positioning = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bovun"]
+shading_mode = 0
+albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
+
+[sub_resource type="TextMesh" id="TextMesh_dc35m"]
+material = SubResource("StandardMaterial3D_bovun")
+text = "9"
+font = SubResource("SystemFont_a740h")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rl1vq"]
+albedo_color = Color(0.796078, 0.709804, 0.854902, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_iibxs"]
+material = SubResource("StandardMaterial3D_rl1vq")
+size = Vector3(1, 0.03, 0.6)
+
+[sub_resource type="SystemFont" id="SystemFont_i247i"]
+subpixel_positioning = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_706nt"]
+shading_mode = 0
+albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
+
+[sub_resource type="TextMesh" id="TextMesh_wb4c2"]
+material = SubResource("StandardMaterial3D_706nt")
+text = "10"
+font = SubResource("SystemFont_i247i")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jkj88"]
+albedo_color = Color(0.873738, 0.733808, 0.306998, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_kb1ii"]
+material = SubResource("StandardMaterial3D_jkj88")
+size = Vector3(1, 0.03, 0.6)
+
+[sub_resource type="SystemFont" id="SystemFont_ckocq"]
+subpixel_positioning = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ehf7j"]
+shading_mode = 0
+albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
+
+[sub_resource type="TextMesh" id="TextMesh_dnp5p"]
+material = SubResource("StandardMaterial3D_ehf7j")
+text = "11"
+font = SubResource("SystemFont_ckocq")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fkdj3"]
+albedo_color = Color(0.875529, 0.641071, 0.984428, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_7e30p"]
+material = SubResource("StandardMaterial3D_fkdj3")
+size = Vector3(1, 0.03, 0.6)
+
+[sub_resource type="SystemFont" id="SystemFont_ny8wl"]
+subpixel_positioning = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nww1c"]
+shading_mode = 0
+albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
+
+[sub_resource type="TextMesh" id="TextMesh_hod1w"]
+material = SubResource("StandardMaterial3D_nww1c")
+text = "12"
+font = SubResource("SystemFont_ny8wl")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fxs16"]
+albedo_color = Color(0.796078, 0.709804, 0.854902, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_a2ht6"]
+material = SubResource("StandardMaterial3D_fxs16")
+size = Vector3(1, 0.03, 0.6)
+
+[sub_resource type="SystemFont" id="SystemFont_0mrgb"]
+subpixel_positioning = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qp34s"]
+shading_mode = 0
+albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
+
+[sub_resource type="TextMesh" id="TextMesh_0swpl"]
+material = SubResource("StandardMaterial3D_qp34s")
+text = "13"
+font = SubResource("SystemFont_0mrgb")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lx68d"]
+albedo_color = Color(0.796078, 0.709804, 0.854902, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_el7mg"]
+material = SubResource("StandardMaterial3D_lx68d")
+size = Vector3(1, 0.03, 0.6)
+
+[sub_resource type="SystemFont" id="SystemFont_xvpqs"]
+subpixel_positioning = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gaffx"]
+shading_mode = 0
+albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
+
+[sub_resource type="TextMesh" id="TextMesh_q4skt"]
+material = SubResource("StandardMaterial3D_gaffx")
+text = "14"
+font = SubResource("SystemFont_xvpqs")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gx6ae"]
+albedo_color = Color(0.796078, 0.709804, 0.854902, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_x5bly"]
+material = SubResource("StandardMaterial3D_gx6ae")
+size = Vector3(1, 0.03, 0.6)
+
+[sub_resource type="SystemFont" id="SystemFont_dydxw"]
+subpixel_positioning = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vlgil"]
+shading_mode = 0
+albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
+
+[sub_resource type="TextMesh" id="TextMesh_f040i"]
+material = SubResource("StandardMaterial3D_vlgil")
+text = "15"
+font = SubResource("SystemFont_dydxw")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qh2cy"]
+albedo_color = Color(0.796078, 0.709804, 0.854902, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_adggm"]
+material = SubResource("StandardMaterial3D_qh2cy")
+size = Vector3(1, 0.03, 0.6)
+
+[sub_resource type="SystemFont" id="SystemFont_j4qly"]
+subpixel_positioning = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wk3m7"]
+shading_mode = 0
+albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
+
+[sub_resource type="TextMesh" id="TextMesh_v3xpt"]
+material = SubResource("StandardMaterial3D_wk3m7")
+text = "16"
+font = SubResource("SystemFont_j4qly")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yutpk"]
+albedo_color = Color(0.796078, 0.709804, 0.854902, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8dyx3"]
+material = SubResource("StandardMaterial3D_yutpk")
+size = Vector3(1, 0.03, 0.6)
+
+[sub_resource type="SystemFont" id="SystemFont_jvlye"]
+subpixel_positioning = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5451g"]
+shading_mode = 0
+albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
+
+[sub_resource type="TextMesh" id="TextMesh_t1spd"]
+material = SubResource("StandardMaterial3D_5451g")
+text = "17"
+font = SubResource("SystemFont_jvlye")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tknyh"]
+albedo_color = Color(0.796078, 0.709804, 0.854902, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_bg3y8"]
+material = SubResource("StandardMaterial3D_tknyh")
+size = Vector3(1, 0.03, 0.6)
+
+[sub_resource type="SystemFont" id="SystemFont_qnlte"]
+subpixel_positioning = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i3ete"]
+shading_mode = 0
+albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
+
+[sub_resource type="TextMesh" id="TextMesh_qqyc4"]
+material = SubResource("StandardMaterial3D_i3ete")
+text = "18"
+font = SubResource("SystemFont_qnlte")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5jxdf"]
+albedo_color = Color(0.796078, 0.709804, 0.854902, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_vlfi2"]
+material = SubResource("StandardMaterial3D_5jxdf")
+size = Vector3(1, 0.03, 0.6)
+
+[sub_resource type="SystemFont" id="SystemFont_tyqxf"]
+subpixel_positioning = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4gh16"]
+shading_mode = 0
+albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
+
+[sub_resource type="TextMesh" id="TextMesh_xr6rw"]
+material = SubResource("StandardMaterial3D_4gh16")
+text = "19"
+font = SubResource("SystemFont_tyqxf")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_21ich"]
+albedo_color = Color(0.796078, 0.709804, 0.854902, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_bh1kr"]
+material = SubResource("StandardMaterial3D_21ich")
+size = Vector3(1, 0.03, 0.6)
+
+[sub_resource type="SystemFont" id="SystemFont_irf54"]
+subpixel_positioning = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6p845"]
+shading_mode = 0
+albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
+
+[sub_resource type="TextMesh" id="TextMesh_60uvs"]
+material = SubResource("StandardMaterial3D_6p845")
+text = "20"
+font = SubResource("SystemFont_irf54")
 
 [node name="Node3D" type="Node3D"]
 script = ExtResource("1_sroh5")
@@ -19,132 +381,254 @@ environment = SubResource("Environment_50s1e")
 transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 0)
 mesh = SubResource("PlaneMesh_tv86b")
 
-[node name="Space" parent="Board" instance=ExtResource("1_qsoe1")]
+[node name="Space" parent="Board" groups=["Spaces"] instance=ExtResource("1_qsoe1")]
 transform = Transform3D(0.166667, 0, 0, 0, 0.166667, 0, 0, 0, 0.166667, -0.482433, 0, 0.557316)
 Id = 1
 Header = "Start"
 SpaceColor = Color(0.513222, 0.799081, 0.876034, 1)
 
-[node name="Space2" parent="Board" instance=ExtResource("1_qsoe1")]
+[node name="Space2" parent="Board" groups=["Spaces"] instance=ExtResource("1_qsoe1")]
 transform = Transform3D(0.166667, 0, 0, 0, 0.166667, 0, 0, 0, 0.166667, -0.482433, 0, 0.447316)
 Id = 2
 SpaceType = 1
 Header = "2"
 SpaceColor = Color(0.796078, 0.709804, 0.854902, 1)
 
-[node name="Space3" parent="Board" instance=ExtResource("1_qsoe1")]
+[node name="SpaceModel" parent="Board/Space2" index="0"]
+mesh = SubResource("BoxMesh_ummhm")
+
+[node name="Text" parent="Board/Space2" index="1"]
+mesh = SubResource("TextMesh_vc1s5")
+
+[node name="Space3" parent="Board" groups=["Spaces"] instance=ExtResource("1_qsoe1")]
 transform = Transform3D(0.166667, 0, 0, 0, 0.166667, 0, 0, 0, 0.166667, -0.482433, 0, 0.337316)
 Id = 3
 SpaceType = 1
 Header = "3"
 SpaceColor = Color(0.796078, 0.709804, 0.854902, 1)
 
-[node name="Space4" parent="Board" instance=ExtResource("1_qsoe1")]
+[node name="SpaceModel" parent="Board/Space3" index="0"]
+mesh = SubResource("BoxMesh_15umx")
+
+[node name="Text" parent="Board/Space3" index="1"]
+mesh = SubResource("TextMesh_kisdq")
+
+[node name="Space4" parent="Board" groups=["Spaces"] instance=ExtResource("1_qsoe1")]
 transform = Transform3D(0.166667, 0, 0, 0, 0.166667, 0, 0, 0, 0.166667, -0.482433, 0, 0.227316)
 Id = 4
 Header = "4"
 SpaceColor = Color(0.796078, 0.709804, 0.854902, 1)
 
-[node name="Space5" parent="Board" instance=ExtResource("1_qsoe1")]
+[node name="SpaceModel" parent="Board/Space4" index="0"]
+mesh = SubResource("BoxMesh_4fd7k")
+
+[node name="Text" parent="Board/Space4" index="1"]
+mesh = SubResource("TextMesh_ixrie")
+
+[node name="Space5" parent="Board" groups=["Spaces"] instance=ExtResource("1_qsoe1")]
 transform = Transform3D(0.166667, 0, 0, 0, 0.166667, 0, 0, 0, 0.166667, -0.482433, 0, 0.117316)
 Id = 5
 Header = "5"
 SpaceColor = Color(0.796078, 0.709804, 0.854902, 1)
 
-[node name="Space6" parent="Board" instance=ExtResource("1_qsoe1")]
+[node name="SpaceModel" parent="Board/Space5" index="0"]
+mesh = SubResource("BoxMesh_4it23")
+
+[node name="Text" parent="Board/Space5" index="1"]
+mesh = SubResource("TextMesh_bovun")
+
+[node name="Space6" parent="Board" groups=["Spaces"] instance=ExtResource("1_qsoe1")]
 transform = Transform3D(0.166667, 0, 0, 0, 0.166667, 0, 0, 0, 0.166667, -0.482433, 0, 0.00731607)
 Id = 6
 Header = "6"
 SpaceColor = Color(0.796078, 0.709804, 0.854902, 1)
 
-[node name="Space7" parent="Board" instance=ExtResource("1_qsoe1")]
+[node name="SpaceModel" parent="Board/Space6" index="0"]
+mesh = SubResource("BoxMesh_33mp0")
+
+[node name="Text" parent="Board/Space6" index="1"]
+mesh = SubResource("TextMesh_40s22")
+
+[node name="Space7" parent="Board" groups=["Spaces"] instance=ExtResource("1_qsoe1")]
 transform = Transform3D(0.166667, 0, 0, 0, 0.166667, 0, 0, 0, 0.166667, -0.482433, 0, -0.102684)
 Id = 7
 Header = "7"
 SpaceColor = Color(0.796078, 0.709804, 0.854902, 1)
 
-[node name="Space8" parent="Board" instance=ExtResource("1_qsoe1")]
+[node name="SpaceModel" parent="Board/Space7" index="0"]
+mesh = SubResource("BoxMesh_oxlx2")
+
+[node name="Text" parent="Board/Space7" index="1"]
+mesh = SubResource("TextMesh_jge1y")
+
+[node name="Space8" parent="Board" groups=["Spaces"] instance=ExtResource("1_qsoe1")]
 transform = Transform3D(0.166667, 0, 0, 0, 0.166667, 0, 0, 0, 0.166667, -0.482433, 0, -0.212684)
 Id = 8
 Header = "8"
 SpaceColor = Color(0.796078, 0.709804, 0.854902, 1)
 
-[node name="Space9" parent="Board" instance=ExtResource("1_qsoe1")]
+[node name="SpaceModel" parent="Board/Space8" index="0"]
+mesh = SubResource("BoxMesh_tb7ru")
+
+[node name="Text" parent="Board/Space8" index="1"]
+mesh = SubResource("TextMesh_4wpwo")
+
+[node name="Space9" parent="Board" groups=["Spaces"] instance=ExtResource("1_qsoe1")]
 transform = Transform3D(0.166667, 0, 0, 0, 0.166667, 0, 0, 0, 0.166667, -0.482433, 0, -0.322684)
 Id = 9
 Header = "9"
 SpaceColor = Color(0.796078, 0.709804, 0.854902, 1)
 
-[node name="Space10" parent="Board" instance=ExtResource("1_qsoe1")]
+[node name="SpaceModel" parent="Board/Space9" index="0"]
+mesh = SubResource("BoxMesh_or18s")
+
+[node name="Text" parent="Board/Space9" index="1"]
+mesh = SubResource("TextMesh_dc35m")
+
+[node name="Space10" parent="Board" groups=["Spaces"] instance=ExtResource("1_qsoe1")]
 transform = Transform3D(0.166667, 0, 0, 0, 0.166667, 0, 0, 0, 0.166667, -0.482433, 0, -0.432684)
 Id = 10
 Header = "10"
 SpaceColor = Color(0.796078, 0.709804, 0.854902, 1)
 
-[node name="Space11" parent="Board" instance=ExtResource("1_qsoe1")]
+[node name="SpaceModel" parent="Board/Space10" index="0"]
+mesh = SubResource("BoxMesh_iibxs")
+
+[node name="Text" parent="Board/Space10" index="1"]
+mesh = SubResource("TextMesh_wb4c2")
+
+[node name="Space11" parent="Board" groups=["Spaces"] instance=ExtResource("1_qsoe1")]
 transform = Transform3D(0.166667, 0, 0, 0, 0.166667, 0, 0, 0, 0.166667, -0.482433, 0, -0.542684)
 Id = 11
 Header = "11"
 SpaceColor = Color(0.873738, 0.733808, 0.306998, 1)
 
-[node name="Space12" parent="Board" instance=ExtResource("1_qsoe1")]
-transform = Transform3D(-7.28523e-09, 0, -0.166667, 0, 0.166667, 0, 0.166667, 0, -7.28523e-09, -0.336357, 0, -0.577052)
-Id = 1
-Header = "Start"
-SpaceColor = Color(0.513222, 0.799081, 0.876034, 1)
+[node name="SpaceModel" parent="Board/Space11" index="0"]
+mesh = SubResource("BoxMesh_kb1ii")
 
-[node name="Space13" parent="Board" instance=ExtResource("1_qsoe1")]
-transform = Transform3D(-7.28523e-09, 0, -0.166667, 0, 0.166667, 0, 0.166667, 0, -7.28523e-09, -0.226376, 0, -0.575011)
-Id = 2
+[node name="Text" parent="Board/Space11" index="1"]
+mesh = SubResource("TextMesh_dnp5p")
+
+[node name="Space12" parent="Board" groups=["Spaces"] instance=ExtResource("1_qsoe1")]
+transform = Transform3D(-7.28523e-09, 0, -0.166667, 0, 0.166667, 0, 0.166667, 0, -7.28523e-09, -0.336357, 0, -0.577052)
+Id = 12
 SpaceType = 1
-Header = "2"
+Header = "12"
+SpaceColor = Color(0.875529, 0.641071, 0.984428, 1)
+
+[node name="SpaceModel" parent="Board/Space12" index="0"]
+mesh = SubResource("BoxMesh_7e30p")
+
+[node name="Text" parent="Board/Space12" index="1"]
+mesh = SubResource("TextMesh_hod1w")
+
+[node name="Space13" parent="Board" groups=["Spaces"] instance=ExtResource("1_qsoe1")]
+transform = Transform3D(-7.28523e-09, 0, -0.166667, 0, 0.166667, 0, 0.166667, 0, -7.28523e-09, -0.226376, 0, -0.575011)
+Id = 13
+SpaceType = 1
+Header = "13"
 SpaceColor = Color(0.796078, 0.709804, 0.854902, 1)
+
+[node name="SpaceModel" parent="Board/Space13" index="0"]
+mesh = SubResource("BoxMesh_a2ht6")
 
 [node name="Text" parent="Board/Space13" index="1"]
 transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 0.331004, 0, 0)
+mesh = SubResource("TextMesh_0swpl")
 
-[node name="Space14" parent="Board" instance=ExtResource("1_qsoe1")]
+[node name="Space14" parent="Board" groups=["Spaces"] instance=ExtResource("1_qsoe1")]
 transform = Transform3D(-7.28523e-09, 0, -0.166667, 0, 0.166667, 0, 0.166667, 0, -7.28523e-09, -0.116395, 0, -0.57297)
-Id = 3
+Id = 14
 SpaceType = 1
-Header = "3"
+Header = "14"
 SpaceColor = Color(0.796078, 0.709804, 0.854902, 1)
 
-[node name="Space15" parent="Board" instance=ExtResource("1_qsoe1")]
+[node name="SpaceModel" parent="Board/Space14" index="0"]
+mesh = SubResource("BoxMesh_el7mg")
+
+[node name="Text" parent="Board/Space14" index="1"]
+mesh = SubResource("TextMesh_q4skt")
+
+[node name="Space15" parent="Board" groups=["Spaces"] instance=ExtResource("1_qsoe1")]
 transform = Transform3D(-7.28523e-09, 0, -0.166667, 0, 0.166667, 0, 0.166667, 0, -7.28523e-09, -0.00641406, 0, -0.570929)
-Id = 4
-Header = "4"
+Id = 15
+SpaceType = 1
+Header = "15"
 SpaceColor = Color(0.796078, 0.709804, 0.854902, 1)
 
-[node name="Space16" parent="Board" instance=ExtResource("1_qsoe1")]
+[node name="SpaceModel" parent="Board/Space15" index="0"]
+mesh = SubResource("BoxMesh_x5bly")
+
+[node name="Text" parent="Board/Space15" index="1"]
+mesh = SubResource("TextMesh_f040i")
+
+[node name="Space16" parent="Board" groups=["Spaces"] instance=ExtResource("1_qsoe1")]
 transform = Transform3D(-7.28523e-09, 0, -0.166667, 0, 0.166667, 0, 0.166667, 0, -7.28523e-09, 0.103567, 0, -0.568889)
-Id = 5
-Header = "5"
+Id = 16
+SpaceType = 1
+Header = "16"
 SpaceColor = Color(0.796078, 0.709804, 0.854902, 1)
 
-[node name="Space17" parent="Board" instance=ExtResource("1_qsoe1")]
+[node name="SpaceModel" parent="Board/Space16" index="0"]
+mesh = SubResource("BoxMesh_adggm")
+
+[node name="Text" parent="Board/Space16" index="1"]
+mesh = SubResource("TextMesh_v3xpt")
+
+[node name="Space17" parent="Board" groups=["Spaces"] instance=ExtResource("1_qsoe1")]
 transform = Transform3D(-7.28523e-09, 0, -0.166667, 0, 0.166667, 0, 0.166667, 0, -7.28523e-09, 0.213548, 0, -0.566848)
-Id = 6
-Header = "6"
+Id = 17
+SpaceType = 1
+Header = "17"
 SpaceColor = Color(0.796078, 0.709804, 0.854902, 1)
 
-[node name="Space18" parent="Board" instance=ExtResource("1_qsoe1")]
+[node name="SpaceModel" parent="Board/Space17" index="0"]
+mesh = SubResource("BoxMesh_8dyx3")
+
+[node name="Text" parent="Board/Space17" index="1"]
+mesh = SubResource("TextMesh_t1spd")
+
+[node name="Space18" parent="Board" groups=["Spaces"] instance=ExtResource("1_qsoe1")]
 transform = Transform3D(-7.28523e-09, 0, -0.166667, 0, 0.166667, 0, 0.166667, 0, -7.28523e-09, 0.323529, 0, -0.564807)
-Id = 7
-Header = "7"
+Id = 18
+SpaceType = 1
+Header = "18"
 SpaceColor = Color(0.796078, 0.709804, 0.854902, 1)
 
-[node name="Space19" parent="Board" instance=ExtResource("1_qsoe1")]
+[node name="SpaceModel" parent="Board/Space18" index="0"]
+mesh = SubResource("BoxMesh_bg3y8")
+
+[node name="Text" parent="Board/Space18" index="1"]
+mesh = SubResource("TextMesh_qqyc4")
+
+[node name="Space19" parent="Board" groups=["Spaces"] instance=ExtResource("1_qsoe1")]
 transform = Transform3D(-7.28523e-09, 0, -0.166667, 0, 0.166667, 0, 0.166667, 0, -7.28523e-09, 0.43351, 0, -0.562767)
-Id = 8
-Header = "8"
+Id = 19
+SpaceType = 1
+Header = "19"
 SpaceColor = Color(0.796078, 0.709804, 0.854902, 1)
 
-[node name="Space20" parent="Board" instance=ExtResource("1_qsoe1")]
+[node name="SpaceModel" parent="Board/Space19" index="0"]
+mesh = SubResource("BoxMesh_vlfi2")
+
+[node name="Text" parent="Board/Space19" index="1"]
+mesh = SubResource("TextMesh_xr6rw")
+
+[node name="Space20" parent="Board" groups=["Spaces"] instance=ExtResource("1_qsoe1")]
 transform = Transform3D(-7.28523e-09, 0, -0.166667, 0, 0.166667, 0, 0.166667, 0, -7.28523e-09, 0.543491, 0, -0.560726)
-Id = 9
-Header = "9"
+Id = 20
+SpaceType = 1
+Header = "20"
 SpaceColor = Color(0.796078, 0.709804, 0.854902, 1)
+
+[node name="SpaceModel" parent="Board/Space20" index="0"]
+mesh = SubResource("BoxMesh_bh1kr")
+
+[node name="Text" parent="Board/Space20" index="1"]
+mesh = SubResource("TextMesh_60uvs")
+
+[node name="Dice" parent="Board" instance=ExtResource("3_ummhm")]
+transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, 0, 0.147128, 0.515658)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
@@ -153,5 +637,22 @@ light_indirect_energy = 10.0
 [node name="Player" parent="." instance=ExtResource("3_8frko")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -2.91928, 0.718161, 3.38387)
 
+[editable path="Board/Space2"]
+[editable path="Board/Space3"]
+[editable path="Board/Space4"]
+[editable path="Board/Space5"]
+[editable path="Board/Space6"]
+[editable path="Board/Space7"]
+[editable path="Board/Space8"]
+[editable path="Board/Space9"]
+[editable path="Board/Space10"]
 [editable path="Board/Space11"]
+[editable path="Board/Space12"]
 [editable path="Board/Space13"]
+[editable path="Board/Space14"]
+[editable path="Board/Space15"]
+[editable path="Board/Space16"]
+[editable path="Board/Space17"]
+[editable path="Board/Space18"]
+[editable path="Board/Space19"]
+[editable path="Board/Space20"]
