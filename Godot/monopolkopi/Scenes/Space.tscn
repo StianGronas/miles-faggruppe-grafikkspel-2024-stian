@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=3 uid="uid://wc8wjde4ctd5"]
 
-[ext_resource type="Script" path="res://Scripts/Space.cs" id="1_eolrg"]
+[ext_resource type="Script" uid="uid://brk12qsm3gwjp" path="res://Scripts/Space.cs" id="1_eolrg"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_265pn"]
-albedo_color = Color(0.796078, 0.709804, 0.854902, 1)
+albedo_color = Color(0.513222, 0.799081, 0.876034, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_xcjj2"]
 material = SubResource("StandardMaterial3D_265pn")
@@ -18,7 +18,7 @@ albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
 
 [sub_resource type="TextMesh" id="TextMesh_4gkka"]
 material = SubResource("StandardMaterial3D_oqosg")
-text = "9"
+text = "Start"
 font = SubResource("SystemFont_h7ejk")
 
 [node name="Space" type="Node3D"]
