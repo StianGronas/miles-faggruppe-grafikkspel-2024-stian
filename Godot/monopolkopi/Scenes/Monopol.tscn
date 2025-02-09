@@ -386,7 +386,7 @@ albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
 
 [sub_resource type="TextMesh" id="TextMesh_8c4qu"]
 material = SubResource("StandardMaterial3D_oxlx2")
-text = "Start"
+text = "21"
 font = SubResource("SystemFont_vc1s5")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tb7ru"]
@@ -405,7 +405,7 @@ albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
 
 [sub_resource type="TextMesh" id="TextMesh_a740h"]
 material = SubResource("StandardMaterial3D_or18s")
-text = "2"
+text = "22"
 font = SubResource("SystemFont_ixrie")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dc35m"]
@@ -424,7 +424,7 @@ albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
 
 [sub_resource type="TextMesh" id="TextMesh_706nt"]
 material = SubResource("StandardMaterial3D_i247i")
-text = "3"
+text = "23"
 font = SubResource("SystemFont_iibxs")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wb4c2"]
@@ -443,7 +443,7 @@ albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
 
 [sub_resource type="TextMesh" id="TextMesh_ehf7j"]
 material = SubResource("StandardMaterial3D_ckocq")
-text = "4"
+text = "24"
 font = SubResource("SystemFont_kb1ii")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dnp5p"]
@@ -462,7 +462,7 @@ albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
 
 [sub_resource type="TextMesh" id="TextMesh_nww1c"]
 material = SubResource("StandardMaterial3D_ny8wl")
-text = "5"
+text = "25"
 font = SubResource("SystemFont_7e30p")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hod1w"]
@@ -481,7 +481,7 @@ albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
 
 [sub_resource type="TextMesh" id="TextMesh_qp34s"]
 material = SubResource("StandardMaterial3D_0mrgb")
-text = "6"
+text = "26"
 font = SubResource("SystemFont_a2ht6")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0swpl"]
@@ -500,7 +500,7 @@ albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
 
 [sub_resource type="TextMesh" id="TextMesh_gaffx"]
 material = SubResource("StandardMaterial3D_xvpqs")
-text = "7"
+text = "27"
 font = SubResource("SystemFont_el7mg")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q4skt"]
@@ -519,7 +519,7 @@ albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
 
 [sub_resource type="TextMesh" id="TextMesh_vlgil"]
 material = SubResource("StandardMaterial3D_dydxw")
-text = "8"
+text = "28"
 font = SubResource("SystemFont_x5bly")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f040i"]
@@ -538,7 +538,7 @@ albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
 
 [sub_resource type="TextMesh" id="TextMesh_wk3m7"]
 material = SubResource("StandardMaterial3D_j4qly")
-text = "9"
+text = "29"
 font = SubResource("SystemFont_adggm")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v3xpt"]
@@ -557,7 +557,7 @@ albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
 
 [sub_resource type="TextMesh" id="TextMesh_5451g"]
 material = SubResource("StandardMaterial3D_jvlye")
-text = "10"
+text = "30"
 font = SubResource("SystemFont_8dyx3")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t1spd"]
@@ -576,7 +576,7 @@ albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
 
 [sub_resource type="TextMesh" id="TextMesh_i3ete"]
 material = SubResource("StandardMaterial3D_qnlte")
-text = "11"
+text = "31"
 font = SubResource("SystemFont_bg3y8")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qqyc4"]
@@ -595,7 +595,7 @@ albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
 
 [sub_resource type="TextMesh" id="TextMesh_4gh16"]
 material = SubResource("StandardMaterial3D_tyqxf")
-text = "12"
+text = "32"
 font = SubResource("SystemFont_vlfi2")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xr6rw"]
@@ -614,7 +614,7 @@ albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
 
 [sub_resource type="TextMesh" id="TextMesh_6p845"]
 material = SubResource("StandardMaterial3D_irf54")
-text = "13"
+text = "33"
 font = SubResource("SystemFont_bh1kr")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_60uvs"]
@@ -633,7 +633,7 @@ albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
 
 [sub_resource type="TextMesh" id="TextMesh_6iunv"]
 material = SubResource("StandardMaterial3D_7b4le")
-text = "14"
+text = "34"
 font = SubResource("SystemFont_ddgw8")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_puruo"]
@@ -652,7 +652,7 @@ albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
 
 [sub_resource type="TextMesh" id="TextMesh_ap3i8"]
 material = SubResource("StandardMaterial3D_ku86q")
-text = "15"
+text = "35"
 font = SubResource("SystemFont_nkope")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c6kjk"]
@@ -671,7 +671,7 @@ albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
 
 [sub_resource type="TextMesh" id="TextMesh_2fluh"]
 material = SubResource("StandardMaterial3D_f7t5v")
-text = "16"
+text = "36"
 font = SubResource("SystemFont_v7icl")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jxq74"]
@@ -690,7 +690,7 @@ albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
 
 [sub_resource type="TextMesh" id="TextMesh_2iu61"]
 material = SubResource("StandardMaterial3D_etql4")
-text = "17"
+text = "37"
 font = SubResource("SystemFont_7wd75")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_odvnv"]
@@ -709,7 +709,7 @@ albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
 
 [sub_resource type="TextMesh" id="TextMesh_0as2r"]
 material = SubResource("StandardMaterial3D_ph02d")
-text = "18"
+text = "38"
 font = SubResource("SystemFont_twijy")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_idqhv"]
@@ -728,7 +728,7 @@ albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
 
 [sub_resource type="TextMesh" id="TextMesh_wuhxi"]
 material = SubResource("StandardMaterial3D_wcw7y")
-text = "19"
+text = "39"
 font = SubResource("SystemFont_hg1rj")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mt5tj"]
@@ -747,12 +747,11 @@ albedo_color = Color(0.169245, 0.169245, 0.169245, 1)
 
 [sub_resource type="TextMesh" id="TextMesh_n20er"]
 material = SubResource("StandardMaterial3D_jbfmn")
-text = "20"
+text = "40"
 font = SubResource("SystemFont_aky7j")
 
-[node name="Node3D" type="Node3D" node_paths=PackedStringArray("DiceTimer")]
+[node name="Node3D" type="Node3D"]
 script = ExtResource("1_sroh5")
-DiceTimer = NodePath("StartDiceTimer")
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 5.72436, 0)
